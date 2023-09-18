@@ -337,7 +337,7 @@ table {
 
 .anchorpane2-region {
 	pointer-events: auto;
-	display: flex;
+	display: fill;
 	background-image: url("media/table_(4).jpg");
 	border-top-right-radius: 2px;
 	border-top-left-radius: 2px;
@@ -346,7 +346,7 @@ table {
 	background-color: #776438ff;
 	background-position: DEFAULT;
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	border-width: 0px;
 	width: 100%;
 	height: 100%;
