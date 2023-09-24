@@ -641,7 +641,7 @@ table {
 	transform: translateX(0.0px) translateY(0.0px) translateZ(0.0px);
 	display: flex;
 	width: 780.0px;
-	height: 1061.5714111328125px;
+	height: auto;
 	flex-shrink: 1;
 }
 
