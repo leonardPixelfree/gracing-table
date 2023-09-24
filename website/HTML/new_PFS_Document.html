@@ -192,7 +192,7 @@
                     </div>
                     <div class="anchorpane8"  id="anchorpane8" >
                         <div class="anchorpane8-region"  id="anchorpane8-region" ></div>
-                    </div>    
+                    </div>
                     <form action="https://formspree.io/f/mknlqyyb" method="POST">
                         <!-- Add your Formspree form ID in the action attribute -->
                     <div class="kontaktform"  id="kontaktform" >
@@ -210,7 +210,7 @@
                                                         <label class="label31-region"  id="label31-region" >Vor- und Nachname*:</label>
                                                     </div>
                                                     <div class="textfield5"  id="textfield5" >
-                                                        <input required=""  pattern="[0-9\s]"  type="text"  class="textfield5-region"  id="textfield5-region" />
+                                                        <input required=""  name="name" type="text"  class="textfield5-region"  id="textfield5-region" />
                                                         <div role="textbox"  class="textfield5-border"  id="textfield5-border" ></div>
                                                     </div>
                                                 </ul>
@@ -221,7 +221,7 @@
                                                         <label class="label32-region"  id="label32-region" >Event (z.B.: Hochzeit, Geburtstag)*:</label>
                                                     </div>
                                                     <div class="textfield6"  id="textfield6" >
-                                                        <input required=""  pattern="-?[0-9a-zA-Z\p{P}\p{S}\s]"  type="text"  class="textfield6-region"  id="textfield6-region" />
+                                                        <input required=""  name="event typ" type="text"  class="textfield6-region"  id="textfield6-region" />
                                                         <div role="textbox"  class="textfield6-border"  id="textfield6-border" ></div>
                                                     </div>
                                                 </ul>
@@ -232,7 +232,7 @@
                                                         <label class="label33-region"  id="label33-region" >Anzahl Personen*:</label>
                                                     </div>
                                                     <div class="textfield7"  id="textfield7" >
-                                                        <input required=""  pattern="[0-9\s]"  type="text"  class="textfield7-region"  id="textfield7-region" />
+                                                        <input required=""  name="anzahl Personen" pattern="[0-9\s]*"  type="text"  class="textfield7-region"  id="textfield7-region" />
                                                         <div role="textbox"  class="textfield7-border"  id="textfield7-border" ></div>
                                                     </div>
                                                 </ul>
@@ -243,7 +243,7 @@
                                                         <label class="label34-region"  id="label34-region" >Postleizahl und Adresse*:</label>
                                                     </div>
                                                     <div class="textfield8"  id="textfield8" >
-                                                        <input required=""  pattern="[0-9\s]"  type="text"  class="textfield8-region"  id="textfield8-region" />
+                                                        <input required=""  name="adresse" type="text"  class="textfield8-region"  id="textfield8-region" />
                                                         <div role="textbox"  class="textfield8-border"  id="textfield8-border" ></div>
                                                     </div>
                                                 </ul>
@@ -253,6 +253,12 @@
                                                     <div class="label35"  id="label35" >
                                                         <label class="label35-region"  id="label35-region" >Datum*:</label>
                                                     </div>
+                                                    <div class="textfield9"  id="textfield9" >
+                                                        <div role="textbox"  class="date-border"  id="textfield9-border" ></div>
+                                                        <input required="" name="datum"  type="date"  class="textfield9-region"  id="datePicker-region" />
+                                                        
+                                                    </div>
+                                                        
                                                 </ul>
                                             </div>
                                             <div class="hbox19"  id="hbox19" >
@@ -261,15 +267,16 @@
                                                         <label class="label36-region"  id="label36-region" >Telefon*:</label>
                                                     </div>
                                                     <div class="textfield9"  id="textfield9" >
-                                                        <input required=""  pattern="[0-9\s]"  type="text"  class="textfield9-region"  id="textfield9-region" />
                                                         <div role="textbox"  class="textfield9-border"  id="textfield9-border" ></div>
+                                                        <input required="" name="telefon" pattern="[0-9\s]*"  type="text"  class="textfield9-region"  id="textfield9-region" />
+                                                        
                                                     </div>
                                                 </ul>
                                             </div>
                                             <div class="anchorpane9"  id="anchorpane9" >
                                                 <div class="anchorpane9-region"  id="anchorpane9-region" >
                                                     <div class="label37"  id="label37" >
-                                                        <label class="label37-region"  id="label37-region" >Anmerkungen:</label>
+                                                        <label class="label37-region" name="Anmerkungen" id="label37-region" >Anmerkungen:</label>
                                                     </div>
                                                     <div class="textarea2"  id="textarea2" >
                                                         <textarea role="textarea"  class="textarea2-region"  id="textarea2-region" ></textarea>
@@ -279,12 +286,14 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="button1"  id="button1" >
+                                        <button class="button1-region"  id="button1-region" type="submit">Abschicken</button>
+                                    </div>
+                                </form>
                                 </ul>
                             </div>
                         </ul>
                     </div>
-                    <input type="submit" value="Submit">
-                    </form>
                     <div class="vboxx"  id="vboxx" >
                         <ul class="vboxx-region"  id="vboxx-region" >
                             <div class="vbox7"  id="vbox7" >

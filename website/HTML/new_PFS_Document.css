@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    pointer-events: none;
+    pointer-events: auto;
     box-sizing: border-box;
 }
 
@@ -38,7 +38,7 @@ table {
 	display: flex;
 	width: 780.0px;
 	max-width: 780.0px;
-	height: 3900.8037109375px;
+	height: 4010.6875px;
 	max-height: 3900.0px;
 	min-height: 3900.0px;
 	min-width: 100% !important;
@@ -101,7 +101,7 @@ table {
 	transform: translateX(0.0px) translateY(0.0px) translateZ(0.0px);
 	display: flex;
 	width: 780.0px;
-	height: 451.5714416503906px;
+	height: 458.625px;
 	flex-shrink: 1;
 }
 
@@ -449,7 +449,7 @@ table {
 	transform: translateX(0.0px) translateY(0.0px) translateZ(0.0px);
 	display: flex;
 	width: 780.0px;
-	height: 478.5714416503906px;
+	height: 485.625px;
 	flex-shrink: 1;
 }
 
@@ -1064,7 +1064,7 @@ table {
 	justify-content: flex-start;
 	align-items: center;
 	width: 780.0px;
-	height: 536.5714111328125px;
+	height: 543.625px;
 	flex-shrink: 1;
 }
 
@@ -1314,7 +1314,7 @@ table {
 	transform: translateX(0.0px) translateY(0.0px) translateZ(0.0px);
 	display: flex;
 	width: 780.0px;
-	height: 501.5714416503906px;
+	height: 508.625px;
 	margin-top: 5.0px;
 	flex-shrink: 1;
 }
@@ -1370,7 +1370,7 @@ table {
 	justify-content: CENTER;
 	text-align: CENTER;
 	width: 476.0px;
-	height: 351.5714416503906px;
+	height: 352.0px;
 	flex-shrink: 1;
 }
 
@@ -1844,7 +1844,7 @@ table {
 	transform: translateX(0.0px) translateY(0.0px) translateZ(0.0px);
 	display: flex;
 	width: 680.0px;
-	height: 0.0px;
+	height: 0.625px;
 	margin-left: 50.0px;
 	flex-shrink: 1;
 }
@@ -1865,7 +1865,7 @@ table {
 	transform: translateX(0.0px) translateY(0.0px) translateZ(0.0px);
 	display: flex;
 	width: 780.0px;
-	height: 649.5714111328125px;
+	height: 716.625px;
 	flex-shrink: 1;
 }
 
@@ -1892,11 +1892,12 @@ table {
 .vbox6 {
 	transform: translateX(0.0px) translateY(0.0px) translateZ(0.0px);
 	display: flex;
-	justify-content: flex-start;
-	align-items: flex-start;
+	align-items: CENTER;
+	justify-content: CENTER;
+	text-align: CENTER;
 	width: 780.0px;
 	max-width: 900.0px;
-	height: 649.5714111328125px;
+	height: 716.625px;
 	flex-grow: 1;
 	flex-basis: 780.0px;
 	flex-shrink: 1;
@@ -1906,8 +1907,9 @@ table {
 	display: flex;
 	flex-direction: column;
 	pointer-events: auto;
-	justify-content: flex-start;
-	align-items: flex-start;
+	align-items: CENTER;
+	justify-content: CENTER;
+	text-align: CENTER;
 	background-color: #cccccc00;
 	border-width: 0px;
 	width: 100%;
@@ -1963,7 +1965,7 @@ table {
 	display: flex;
 	width: 780.0px;
 	max-width: 900.0px;
-	height: 602.5714111328125px;
+	height: 602.625px;
 	flex-grow: 1;
 	flex-basis: 200px;
 	flex-shrink: 1;
@@ -2674,6 +2676,33 @@ table {
 	border-bottom-style: solid;
 	background-color: transparent;
 	position: absolute;
+	pointer-events: none
+}
+
+.date-border{
+	transform: translateX(0.0px) translateY(0.0px) translateZ(-1.0px);
+	display: flex;
+	border-top-color: #000000ff;
+	border-right-color: #000000ff;
+	border-bottom-color: #000000ff;
+	border-left-color: #000000ff;
+	border-right-width: 2.0px;
+	border-left-width: 2.0px;
+	border-top-width: 2.0px;
+	border-bottom-width: 2.0px;
+	border-top-right-radius: 8.0px;
+	border-top-left-radius: 8.0px;
+	border-bottom-right-radius: 8.0px;
+	border-bottom-left-radius: 8.0px;
+	height: calc(100% + 0.0px);
+	width: calc(100% + 0.0px);
+	inset: 0.0px 0.0px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	background-color: transparent;
+	position:fixed;
 	pointer-events: none;
 }
 
@@ -2773,6 +2802,7 @@ table {
 	font-size: 12.0px;
 	font-weight: 400;
 	-webkit-text-fill-color: #000000;
+	resize: none;
 }
 
 .textarea2-border {
@@ -2802,12 +2832,50 @@ table {
 	border-top-style: solid;
 	border-bottom-style: solid;
 	background-color: transparent;
-	pointer-events: none;
 	position: absolute;
 	padding-left: 4.5px;
 	padding-top: 4.5px;
 	left: -1.5px;
 	top: -1.5px;
+	pointer-events: none
+}
+
+.button1 {
+	transform: translateX(0.0px) translateY(0.0px) translateZ(0.0px);
+	display: flex;
+	width: 200.0px;
+	max-width: 200.0px;
+	height: 67.0px;
+	max-height: 100.0px;
+	flex-shrink: 1;
+}
+
+.button1-region {
+	pointer-events: auto;
+	align-items: CENTER;
+	justify-content: CENTER;
+	padding-top: 20px;
+	padding-right: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	background-color: #00000000;
+	border-width: 0px;
+	width: 100%;
+	height: 100%;
+	text-align: CENTER;
+	font-family: Cambria;
+	font-size: 22.0px;
+	font-weight: 400;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: calc(100% + 0.0px);
+	display: inline-block;
+	-webkit-text-fill-color: #000000ff;
 }
 
 .vboxx {
@@ -2816,7 +2884,7 @@ table {
 	justify-content: flex-end;
 	align-items: center;
 	width: 780.0px;
-	height: 216.375px;
+	height: 223.3125px;
 	flex-grow: 1;
 	flex-basis: auto;
 	flex-shrink: 1;
@@ -2847,7 +2915,7 @@ table {
 	justify-content: flex-start;
 	align-items: flex-start;
 	width: 367.251953125px;
-	height: 166.375px;
+	height: 173.3125px;
 	margin-top: 50.0px;
 	flex-shrink: 1;
 }
@@ -2876,7 +2944,7 @@ table {
 	transform: translateX(0.0px) translateY(0.0px) translateZ(0.0px);
 	display: flex;
 	width: 367.251953125px;
-	height: 108.1875px;
+	height: 111.3125px;
 	flex-shrink: 1;
 }
 
@@ -2912,7 +2980,7 @@ table {
 	transform: translateX(0.0px) translateY(0.0px) translateZ(0.0px);
 	display: flex;
 	width: 220.80859375px;
-	height: 58.1875px;
+	height: 62.0px;
 	flex-shrink: 1;
 }
 
